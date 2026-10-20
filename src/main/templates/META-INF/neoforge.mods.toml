@@ -46,12 +46,16 @@ displayName="${mod_name}" #mandatory
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Suppresses two MCreator "global entity tick" listeners that run /attribute commands on
+every loaded entity, every tick: polars_exploration_additions' Player2Procedure and
+the_world_beneath's GauntletNotInHandTickProcedure.
+
+Both mods are optional. If they are not installed, the corresponding fix simply idles.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
-#[[mixins]]
-#config="${mod_id}.mixins.json"
+[[mixins]]
+config="${mod_id}.mixins.json"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg

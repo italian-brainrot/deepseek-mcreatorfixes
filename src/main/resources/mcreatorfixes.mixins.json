@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.deepseek.mcreatorfixes.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "Player2ProcedureMixin",
+    "GauntletProcedureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
